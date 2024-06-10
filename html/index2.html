@@ -1,0 +1,49 @@
+<!-- 이건 주변검색 html이야 잘 기억해줘 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도 페이지</title>
+    <!-- Font Awesome 최신 CDN 추가 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Kakao Maps JavaScript API 추가 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b2a0131f4a53bec9033cfe18aad009d5&libraries=services"></script>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <div id="step01" class="container">
+        <div class="header">
+            <div class="header-top">
+                <button class="left-button icon-circle" id="locateButton" onclick="locateUser()"><i class="fas fa-crosshairs"></i></button>
+                <h1>주변 검색</h1>
+                <button class="right-button icon-circle" id="addButton"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-bar" placeholder="검색">
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="top-buttons">
+                <button class="undo-button icon-circle" id="undoButton"><i class="fas fa-undo"></i></button>
+                <button class="menu-button icon-circle" id="menuButton" onclick="toggleButtons()"><i class="fas fa-ellipsis-h"></i></button>
+                <div class="additional-buttons">
+                    <button class="hospital-button icon-circle" id="hospitalButton"><i class="fas fa-hospital"></i></button>
+                    <button class="food-button icon-circle" id="foodButton"><i class="fas fa-utensils"></i></button>
+                    <button class="store-button icon-circle" id="storeButton"><i class="fas fa-store"></i></button>
+                    <button class="parking-button icon-circle" id="parkingButton"><i class="fas fa-parking"></i></button>
+                </div>
+            </div>
+            <div class="footer-buttons">
+                <button class="icon-circle" id="barsButton"><i class="fas fa-bars"></i></button>
+                <button class="icon-circle" id="heartButton"><i class="fas fa-heart-circle-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/java.js"></script>
+</body>
+</html>

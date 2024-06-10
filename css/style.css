@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px; /* 화면 너비 600px + 양쪽 여백 200px씩 */
+}
+.header {
+    background-color: #66c5c7;
+    padding: 60px 10px; /* 위아래 여백을 더 주기 위해 패딩 값 조정 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto; /* 높이를 자동으로 설정하여 패딩 값에 맞게 조정 */
+    flex-wrap: wrap; /* 줄 바꿈을 허용 */
+}
+.header .home-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px; /* 아이콘 크기를 더 크게 설정 */
+    margin-left: 20px; /* 오른쪽으로 이동 */
+}
+.header .user-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px; /* 아이콘 크기를 더 크게 설정 */
+    margin-right: 20px; /* 왼쪽으로 이동 */
+}
+.header h1 {
+    font-size: 44px; /* 글씨 크기를 20포인트 더 크게 설정 */
+    color: #fff;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10px; /* 위쪽 여백 추가 */
+}
+.search-container .search-icon {
+    font-size: 20px;
+    color: #888;
+    margin-right: 10px;
+}
+.search-bar {
+    width: 100%;
+    padding: 15px; /* 더 큰 패딩 설정 */
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* 더 큰 텍스트 크기 설정 */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 20px; /* 세로 간격을 20px로 설정 */
+    padding: 10px;
+    margin-top: 10px;
+}
+.grid-item {
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    height: 200px; /* 기존 높이에서 100px 추가 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}

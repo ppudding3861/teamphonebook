@@ -1,0 +1,143 @@
+/* 이 css는 주변검색css이다. 잘 기억해줘 */
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    margin: 0 200px; /* 양쪽 여백을 200px씩 설정 */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #66c5c7;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left-button, .header .right-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer; /* 마우스 포인터를 손 모양으로 변경 */
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.search-container .search-icon {
+    font-size: 20px;
+    color: #888;
+    margin-right: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.map-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.footer-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.footer-buttons button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer; /* 마우스 포인터를 손 모양으로 변경 */
+}
+
+.top-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.top-buttons button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer; /* 마우스 포인터를 손 모양으로 변경 */
+}
+
+.additional-buttons {
+    display: none;
+}
+
+.show-buttons .additional-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw; /* 화면 너비의 4%로 설정 */
+    height: 4vw; /* 화면 너비의 4%로 설정 */
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s; /* 클릭 시 변형 애니메이션 */
+}
+
+.icon-circle:active {
+    transform: scale(0.9); /* 클릭 시 크기 축소 효과 */
+}
